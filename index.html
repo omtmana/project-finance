@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Manalastas Finance Project</title>
+        <link rel="stylesheet" href="main.css">
+        <script async src="main.js"></script>
+    </head>
+    <body>
+        <header>
+        <h1> Manalastas Crypto Exchange </h1>
+        </header>
+
+        <!-- div for all your personal info  -->
+        <div id="personal-info">
+            <h2>Personal Information</h2>
+            <!-- funds container info -->
+            <div class="funds-container">
+                <h3>Current Balance: </h3>
+            </div>
+            <!-- buy container info -->
+            <div class="buy-container">
+                <h3>Buy: </h3>
+            </div>
+            <!-- sell container info -->
+            <div class="sell-container">
+                <h3>Sell: </h3>
+            </div>
+        </div>
+
+        <!-- div for BPI info -->
+        <div class="coindesk-bpi-info">
+            <div class="info-head">
+                <h3 class="country-code">Code Country Goes Here</h3>                
+            </div>
+            <div class="info-body">
+                <h3 class="country-symbol">Currency Symbol Goes Here</h3>
+                <h3 class="crypto-rate">Crypto Rate goes in here</h3>
+            </div>
+            <div class="info-foot">
+                <h3 class="crypto-description">Description goes in here</h3>
+            </div>
+        </div>
+
+        <!-- div for buttons -->
+        <div id="function-buttons">
+            <!-- funds button -->
+            <div class="fundsBtn">
+            <form>
+                <label for="transferFunds">Transfer Funds</label><br>
+                <input type="text" id="transfer-funds" name="transferFunds"><br>
+                <button type="submit" id="transfer-funds-button">Transfer Funds</button>
+            </form><br>
+            </div>
+            <!-- buy button -->
+            <div class="buyBtn">
+            <form>
+                <label for="buyStocks">Buy</label><br>
+                <input type="text" id="buy-stocks" name="buyStocks"><br>
+                <button type="submit" id="buy-button">Buy</button>
+            </form><br>
+            </div>
+            <!-- sell button -->
+            <div class="sellBtn">
+            <form>
+                <label for="sellStocks">Sell</label><br>
+                <input type="text" id="sell-stocks" name="sellStocks"><br>
+                <button type="submit" id="sell-button">Sell</button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
