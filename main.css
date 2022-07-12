@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align:center;
+}
+
+#function-buttons {
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+#personal-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coindesk-bpi-info {
+    width: 500px;
+    height: 300px;
+    border: 2px gray solid;
+    border-radius: 2%;
+}
+
+.info-head {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-body {
+    display: flex;
+    justify-content: center;
+}
+
+.info-foot {
+    display: flex;
+    justify-content: center;
+}

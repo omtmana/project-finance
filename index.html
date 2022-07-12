@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Manalastas Finance Project</title>
         <link rel="stylesheet" href="main.css">
-        <script async src="main.js"></script>
+        <script defer src="main.js"></script>
     </head>
     <body>
         <header>
@@ -31,14 +31,16 @@
         <!-- div for BPI info -->
         <div class="coindesk-bpi-info">
             <div class="info-head">
-                <h3 class="country-code">Code Country Goes Here</h3>                
+                <h3 class="usa-country-code">USD</h3>
+                <h3 class="gbp-country-code">GBP</h3>
+                <h3 class="eur-country-code">EUR</h3>                
             </div>
             <div class="info-body">
-                <h3 class="country-symbol">Currency Symbol Goes Here</h3>
-                <h3 class="crypto-rate">Crypto Rate goes in here</h3>
+                <h3 class="crypto-description">Description goes in here</h3>
             </div>
             <div class="info-foot">
-                <h3 class="crypto-description">Description goes in here</h3>
+                <h3 class="country-symbol">Currency Symbol Goes Here</h3>
+                <h3 class="crypto-rate">Crypto Rate goes in here</h3>
             </div>
         </div>
 
@@ -57,6 +59,12 @@
             <form>
                 <label for="buyStocks">Buy</label><br>
                 <input type="text" id="buy-stocks" name="buyStocks"><br>
+                <select id="crypto-list" onchange="cryptoCurrency()">
+                    <option>---BPI---</option>
+                    <option>USD</option>
+                    <option>GBP</option>
+                    <option>EUR</option>
+                </select>
                 <button type="submit" id="buy-button">Buy</button>
             </form><br>
             </div>
