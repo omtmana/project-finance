@@ -66,19 +66,25 @@ fundsBtn.addEventListener('submit' , (e) => {
 })
 
 const buyBtn = document.querySelector('.buyBtn')
-const buyStocks = document.querySelector('#buy-stocks')
+let buyStocks = document.querySelector('#buy-stocks')
+let buyQuantity = document.querySelector('#buy-quantity')
 buyBtn.addEventListener('submit' , (e) => {
     e.preventDefault()
     let buyContainer = document.querySelector('.buy-container')
     let p = document.createElement('p')
-    p.textContent = buyStocks.value
+    let buyStocks = document.querySelector('#buy-stocks').value
+    let buyQuantity = document.querySelector('#buy-quantity').value
+    let int = parseFloat(19582.8545)
+    buyQuantity = parseFloat(buyQuantity)
+    console.log(buyQuantity) 
+    p.textContent = ((buyStocks) * (buyQuantity))
     buyContainer.appendChild(p)
 })
 
 let cryptoCurrency = () => {
     let cryptoList = document.querySelector('#crypto-list')
     let buyStocks = document.querySelector('#buy-stocks')
-    buyStocks.value = cryptoList.options[cryptoList.selectedIndex].text
+    buyStocks.value = cryptoList.options[cryptoList.selectedIndex].value
 }
 
 const sellBtn = document.querySelector('.sellBtn')
