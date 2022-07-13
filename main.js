@@ -92,6 +92,7 @@ fundsBtn.addEventListener('submit' , (e) => {
     let fundsContainer = document.querySelector('.funds-container')
     let p = document.createElement('p')
     p.textContent = transferFunds.value
+    p.id = "current-bal"
     fundsContainer.appendChild(p)
     fundsAvailable = transferFunds.value
     // let transferFundsValue = transferFunds.value
@@ -122,11 +123,20 @@ buyBtn.addEventListener('submit' , (e) => {
 
 // function with all the calculations
 let calculation = () => {
-    while (fundsAvailable > total) {
-        let diff = (fundsAvailable - total)
-        console.log(diff)
-        fundsAvailable - total
+    console.log('hi')
+    let currentBal = document.querySelector('#current-bal')
+    // let actualBal = currenBal.textContent
+    // actualBal = parseFloat(actualBal)
+    console.log('bal', transferFunds.value)
+    console.log('cost', total)
+    if (transferFunds.value > total) {
+        transferFunds.value = transferFunds.value - total
+        currentBal.textContent = transferFunds.value
     }
+    else{
+        console.log('not enough')
+    }
+
 }
 
 // function to copy what was selected in option to the input field
