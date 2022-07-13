@@ -23,9 +23,9 @@
                 <h3>Buy: </h3>
             </div>
             <!-- sell container info -->
-            <div class="sell-container">
+            <!-- <div class="sell-container">
                 <h3>Sell: </h3>
-            </div>
+            </div> -->
         </div>
 
         <!-- div for BPI info -->
@@ -36,11 +36,17 @@
                 <h3 class="eur-country-code">EUR</h3>                
             </div>
             <div class="info-body">
-                <h3 class="crypto-description">Description goes in here</h3>
+                <h3 class="crypto-description"></h3>
             </div>
             <div class="info-foot">
-                <h3 class="country-symbol">Currency Symbol Goes Here</h3>
-                <h3 class="crypto-rate">Crypto Rate goes in here</h3>
+                <h3 class="country-symbol"></h3>
+                <h3 class="crypto-rate"></h3>
+            </div>
+            <!-- <div class="info-buy-btn">
+                <form>
+                    <input type="number" id="buy-stocks" name="buyStocks" placeholder="Quantity">
+                    <button type="submit" id="buy-button">Buy</button>
+                </form> -->
             </div>
         </div>
 
@@ -50,7 +56,7 @@
             <div class="fundsBtn">
             <form>
                 <label for="transferFunds">Transfer Funds</label><br>
-                <input type="text" id="transfer-funds" name="transferFunds"><br>
+                <input type="number" id="transfer-funds" name="transferFunds"><br>
                 <button type="submit" id="transfer-funds-button">Transfer Funds</button>
             </form><br>
             </div>
@@ -58,25 +64,31 @@
             <div class="buyBtn">
             <form>
                 <label for="buyStocks">Buy</label><br>
-                <input type="text" id="buy-stocks" name="buyStocks"><br>
-                <input type="text" id="buy-quantity" name="buyQuantity" placeholder="Quantity"><br>
+                <input type="number" id="buy-stocks" name="buyStocks"><br>
+                <input type="number" id="buy-quantity" name="buyQuantity" placeholder="Quantity"><br>
                 <select id="crypto-list" onchange="cryptoCurrency()">
                     <option>---BPI---</option>
-                    <option value='19582.8545'>USD</option>
-                    <option value='16363.2765'>GBP</option>
-                    <option value='19076.5594'>EUR</option>
+                    <option value='19582'>USD</option>
+                    <option value='16363'>GBP</option>
+                    <option value='19076'>EUR</option>
                 </select>
                 <button type="submit" id="buy-button">Buy</button>
             </form><br>
             </div>
             <!-- sell button -->
-            <div class="sellBtn">
+            <!-- <div class="sellBtn">
             <form>
                 <label for="sellStocks">Sell</label><br>
-                <input type="text" id="sell-stocks" name="sellStocks"><br>
+                <input type="number" id="sell-stocks" name="sellStocks"><br>
                 <button type="submit" id="sell-button">Sell</button>
             </form>
-            </div>
+            </div> -->
         </div>
+        <!-- div that shows quantity and total of how much you bought -->
+        <div>
+
+        </div>
+
+        <!-- div that shows the transaction you just did  -->
     </body>
 </html>

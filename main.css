@@ -16,6 +16,7 @@ h1 {
 
 #personal-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
