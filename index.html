@@ -7,20 +7,21 @@
         <script defer src="main.js"></script>
     </head>
     <body>
+        <div id="body-style">
         <header>
-        <h1> Manalastas Crypto Exchange </h1>
+        <h1 id="head1"> Manalastas Crypto Exchange </h1>
         </header>
 
         <!-- div for all your personal info  -->
         <div id="personal-info">
-            <h2>Personal Information</h2>
+            <h2>PERSONAL INFORMATION</h2>
             <!-- funds container info -->
             <div class="funds-container">
-                <h3>Current Balance: </h3>
+                <h3 id="balance-header">CURRENT BALANCE:  </h3>
             </div>
             <!-- buy container info -->
             <div class="buy-container">
-                <h3>Buy: </h3>
+                <h3 id="buy-header">BUY:  </h3>
             </div>
             <!-- sell container info -->
             <!-- <div class="sell-container">
@@ -55,7 +56,7 @@
             <!-- funds button -->
             <div class="fundsBtn">
             <form>
-                <label for="transferFunds">Transfer Funds</label><br>
+                <label for="transferFunds" id="transferFunds">Transfer Funds</label><br>
                 <input type="number" id="transfer-funds" name="transferFunds"><br>
                 <button type="submit" id="transfer-funds-button">Transfer Funds</button>
             </form><br>
@@ -63,7 +64,7 @@
             <!-- buy button -->
             <div class="buyBtn">
             <form>
-                <label for="buyStocks">Buy</label><br>
+                <label for="buyStocks" id="buyStocks">Buy</label><br>
                 <input type="number" id="buy-stocks" name="buyStocks"><br>
                 <input type="number" id="buy-quantity" name="buyQuantity" placeholder="Quantity"><br>
                 <select id="crypto-list" onchange="cryptoCurrency()">
@@ -85,10 +86,7 @@
             </div> -->
         </div>
         <!-- div that shows quantity and total of how much you bought -->
-        <div>
-
-        </div>
-
         <!-- div that shows the transaction you just did  -->
     </body>
+    <footer></footer>
 </html>

@@ -27,6 +27,7 @@ let showBPI = (container) => {
 
 // function to show USD data on page 
 // function to be able to buy USD crypto
+let bodyStyle = document.getElementById('body-style')
 let usdShowData = (usdData) => {
     const usdBtn = document.querySelector('.usa-country-code')
     usdBtn.addEventListener('click' , () => {
@@ -37,6 +38,9 @@ let usdShowData = (usdData) => {
         cryptoRate.textContent = usdData.rate
         currentAmount = usdData.rate;
         cryptoDescription.textContent = usdData.description
+        // CSS
+        document.body.style.backgroundImage = 'url("https://wallpaperaccess.com/full/16732.jpg")'
+        bodyStyle.style.backgroundColor = 'white';
         // let buyBtn = document.querySelector('#buy-btn')
         // buyBtn.addEventListener = ('submit' , (e) => {
         //     e.preventDefault()
@@ -65,6 +69,9 @@ let gbpShowData = (gbpData) => {
         cryptoRate.textContent = gbpData.rate
         currentAmount = gbpData.rate
         cryptoDescription.textContent = gbpData.description
+        // CSS
+        document.body.style.backgroundImage = 'url("https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg")'
+        bodyStyle.style.backgroundColor = 'white'
     })
 }
 
@@ -80,6 +87,9 @@ let eurShowData = (eurData) => {
         cryptoRate.textContent = eurData.rate
         currentAmount = eurData.rate
         cryptoDescription.textContent = eurData.description
+        // CSS
+        document.body.style.backgroundImage = 'url("https://upload.wikimedia.org/wikipedia/commons/b/ba/Eu-Flag.jpg")'
+        bodyStyle.style.backgroundColor = 'white'
     })
 }
 
